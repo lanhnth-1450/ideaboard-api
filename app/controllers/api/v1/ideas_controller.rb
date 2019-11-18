@@ -10,6 +10,13 @@ module Api::V1
       render json: @idea
     end
 
+    def update
+      binding.pry
+      @idea = Idea.find params[:id]
+      @idea.update_attributes idea_params
+      render json: @idea
+    end
+
     private
 
     def idea_params

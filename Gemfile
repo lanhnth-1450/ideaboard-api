@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "2.5.1"
 
 gem "rails", "~> 5.2.3"
-gem "puma", "~> 3.11"
+gem "puma", "~> 4.3"
 gem "mysql2", "~> 0.5.2"
 gem 'rack-cors', :require => 'rack/cors'
 
